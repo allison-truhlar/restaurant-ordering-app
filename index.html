@@ -1,0 +1,56 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-inner">
+                <h1>Bob's Diner</h1>
+                <h3>The best burgers and pizza in town.</h3>
+            </div>
+        </header>
+        <div class="container">
+            <main>
+                <div class="full-menu" id="full-menu">
+                    <!-- MENU ITEMS POPULATE HERE -->
+                </div>
+                <div class="checkout-area" id="checkout-area"> 
+                    
+                    <div class="checkout-inner" id="checkout-inner">                   
+                        <h2 class="order-title">Your order</h2>
+                        <div class="order-area" id="order-area">
+                            <!-- CUSTOMER-SELECTED ITEMS POPULATE HERE -->
+                        </div>
+                        <div class="order-total" id="order-total">
+                            <h2 class="order-item">Total price:</h2>
+                            <p class="order-item-price" id="total-price">
+                                <!--TOTAL PRICE POPULATES HERE-->
+                            </p>
+                        </div>
+                        <div class="order-btn-container">
+                        <button class="order-btn" id="order-btn">COMPLETE ORDER</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="modal" id="modal">
+                    <p class="modal-title">Enter card details</p>
+                    <form id="card-details-form">
+                        <input type="text" id="customer-name" name="customer-name" placeholder="Enter your name" required>
+                        <input type="text" inputmode="numeric" id="card-number" name="card-number" placeholder="Enter card number" required>
+                        <input type="text" inputmode="numeric" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                        <div class="pay-btn-container">
+                            <button class="pay-btn" id="pay-btn" type="submit">Pay</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

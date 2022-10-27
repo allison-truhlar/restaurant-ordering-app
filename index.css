@@ -1,0 +1,275 @@
+body{
+    margin: 10px auto 10px auto;
+    background-color: #F5F5F5;
+    max-width: 600px;
+    border: 1px solid #D2D2D2;
+}
+
+/* fonts */
+
+@font-face {
+        font-family: Smythe;
+        src:url(fonts/Smythe-Regular.ttf);
+        }
+        
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+/* header layout and typography */
+
+header{
+    margin: 0 auto;
+    background: url(imgs/hamburger.jpg) no-repeat center;
+    background-size: cover;
+    font-family: Smythe;
+    color: #FFFFFF;
+}
+
+h1, h3{
+    margin: 0;
+    font-weight: 400;
+}
+
+h1{
+    padding: 45px 0px 20px 45px;
+    font-size: 39px;
+    
+}
+
+h3{
+    font-size: 22px;
+    padding: 0px 0px 70px 45px;
+}
+
+/* menu section layout*/
+
+.container{
+    max-width: 505px;
+    margin: 0 auto;
+    font-family: Smythe;
+}
+
+.menu-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0 50px 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.item-description, .btn-section{
+    display: flex;
+    align-items: center;
+}
+
+.item-description{
+    justify-content: space-between;
+    color: #000000;
+}
+
+.add-item-btn-section{
+    padding-right: 45px;
+}
+
+.item-name, .item-ingredients, .item-price, .item-emoji{
+    margin: 0;
+    font-weight: 400;
+}
+
+/* menu section typography */
+
+.item-name{
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.item-ingredients{
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.item-price{
+    font-size: 20px;
+}
+
+.item-emoji{
+    font-size: 80px;
+    padding: 0 30px 0 45px;
+}
+
+/* add item button */
+
+.add-item-btn{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 32px;    
+    color: #3C3C3C;
+}
+
+/* checkout area layout */
+
+.checkout-area{
+    margin: 0;
+    min-height: 370px;
+    padding-bottom: 50px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.checkout-inner{
+    display: none;
+}
+
+.order-line-item, .order-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-line-item{
+    padding-bottom: 10px;
+}
+
+.order-total{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #393333;
+}
+
+.order-title{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 45px;
+}
+
+.order-item-container{
+    margin:0;
+    padding:0;
+}
+
+.order-item{
+    display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding-right: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+
+.remove-btn{
+    display: inline;
+    vertical-align: middle;
+    padding:0;
+    border:none;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #BBBBBB;
+}
+
+.order-item-price{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: right;
+    margin: 0; 
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+}
+
+.order-btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    width: 508px;
+    height: 60px;
+    background: #16DB99;
+    border: none;
+    border-radius: 5px;
+}
+
+.order-btn-container{
+    margin-top: 50px;
+}
+
+.modal{
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin:auto;
+    display: none;
+    width: 525px;
+    height: 540px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 1px 1px 100px 5px darkgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+input{
+    width: 450px;
+    height: 70px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    margin: 10px 20px 10px 20px;
+    padding: 5px 0px 5px 25px;
+    font-size: 20px;
+    color: #757575;
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    margin: 0;
+    padding: 40px;
+}
+
+.pay-btn{
+    width: 475px;
+    height: 70px;
+    background: #16DB99;
+    border-radius: 4px;
+    border:none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.pay-btn-container{
+    padding-top: 25px;
+    margin: 0px;
+}
+
+.thank-you-message{
+    font-weight: 400;
+    font-size: 32px;
+    color: #065F46;
+    padding-top: 35px;
+}
+
+.thank-you-message-container{
+    width: 500px;
+    height: 120px;
+    background: #ECFDF5;
+    border-radius: 3px;
+}
+
+.new-order-btn-container{
+    padding-top: 25px;
+}
