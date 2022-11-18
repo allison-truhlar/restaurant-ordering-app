@@ -1,3 +1,5 @@
+This is a solo project by Allison Truhlar
+
 # co9f5435f8a034e9321e231e4
 
 ## About Scrimba
